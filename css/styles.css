@@ -926,7 +926,8 @@ input[type='checkbox'] {
 }
 
 #store{
-	padding-top: 5px;
+	padding-top: 0px;
+	width: 170px;
 }
 
 
@@ -2206,7 +2207,7 @@ a:hover.back-to-top {
 	}
   }
 	
-  /* Carrusel para phone y mas servicios */
+  /* Carrusel para pantalla pequeña y mas servicios */
 
 @media screen and (max-width: 768px) {
 	.carrusel {
@@ -2231,3 +2232,47 @@ a:hover.back-to-top {
 	}
 
 }
+
+/* Swiper de empresas */
+@media screen and (max-width: 768px) {
+	#pelu{
+		padding-top: 0px;
+		height: 65px;
+	}
+
+	#fuel{
+		padding-top: 0px;
+		height: 65px;
+	}
+
+	#perfu{
+		padding-top: 0px;
+		height: 65px;
+	}
+
+	#wheel{
+		padding-top: 8px;
+		height: 70px;
+	}
+
+	#shoes{
+		padding-top: 15px;
+		height: 71px;
+	}
+
+	#farmacy{
+		padding-top: 3px;
+		height: 71px;
+	}
+
+	#screwdriver{
+		padding-top: 5px;
+		height: 68px;
+	}
+
+	#store{
+		padding-top: 0px;
+		width: 250px;
+		height: 65px;
+	}
+	}

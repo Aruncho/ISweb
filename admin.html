@@ -38,6 +38,10 @@
     <!--ANIMATED CSS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 
+    <!--LIGHTBOX-->
+    <link rel="stylesheet" href="css/lightbox.min.css">
+    <link rel="stylesheet" href="css/tab-admin.css">
+
 </head>
 
 <body data-spy="scroll" data-target=".fixed-top">
@@ -128,66 +132,293 @@
 
     <!--TAB SECTION-->
     <div class="tab">
-        <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Inventario</button>
-        <button class="tablinks" onclick="openCity(event, 'Paris')">Compras</button>
-        <button class="tablinks" onclick="openCity(event, 'Tokyo')">Ventas</button>
-        <button class="tablinks" onclick="openCity(event, 'B')">Despacho</button>
-        <button class="tablinks" onclick="openCity(event, 'V')">Banco</button>
-        <button class="tablinks" onclick="openCity(event, 'C')">Configuracion</button>
-      </div>
-      
-      <!--CONTENIDO-->
-      <div id="London" class="tabcontent">
-        <h3 class="p-3">Modulo de Inventario</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi enim cupiditate rem placeat nihil aliquam facere maxime odio laboriosam sed porro earum cum nisi natus tempore illum eum harum, eos sit aperiam, fugit adipisci! Inventore dolore, dolorum, blanditiis perspiciatis porro tempora aliquid quaerat, unde quisquam dolorem similique at iste recusandae temporibus! Fuga cumque obcaecati quo, dolorem cum, esse enim similique numquam ullam consectetur asperiores accusamus tempora illo blanditiis. Impedit beatae quos sed animi minus, maxime fuga consequatur totam expedita. Laudantium rerum illum quam fugit veritatis quasi officia, facere consequuntur sint aperiam error! Odio fugiat aspernatur vero nostrum, asperiores modi nobis!</p>
-      </div>
-      
-      <div id="Paris" class="tabcontent">
-        <h3 class="p-3">Modulo de Compras</h3>
-        <p>Paris is the capital of France.</p> 
-      </div>
-      
-      <div id="Tokyo" class="tabcontent">
-        <h3 class="p-3">Modulo de Ventas</h3>
-        <p>Tokyo is the capital of Japan.</p>
-      </div>
-  
-      <div id="B" class="tabcontent">
-        <h3 class="p-3">Modulo de Despacho</h3>
-        <p>Paris is the capital of France.</p> 
-      </div>
-      
-      <div id="V" class="tabcontent">
-        <h3 class="p-3">Modulo de Banco</h3>
-        <p>Tokyo is the capital of Japan.</p>
-      </div>
+        <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen"><i class="fas fa-box-open pr-1"></i>INVENTARIO</button>
+        <button class="tablinks" onclick="openCity(event, 'Paris')"><i class="fas fa-money-check pr-1"></i>COMPRAS</button>
+        <button class="tablinks" onclick="openCity(event, 'Tokyo')"><i class="fas fa-shopping-cart pr-1"></i>VENTAS</button>
+        <button class="tablinks" onclick="openCity(event, 'B')"><i class="fas fa-truck pr-1"></i>DESPACHO</button>
+        <button class="tablinks" onclick="openCity(event, 'V')"><i class="fas fa-piggy-bank pr-1"></i>BANCO</button>
+        <button class="tablinks" onclick="openCity(event, 'C')"><i class="fas fa-tools pr-1"></i>CONFIGURACIÓN</button>
+    </div>
 
-      <div id="C" class="tabcontent">
+    <!--CONTENIDO-->
+    <div id="London" class="tabcontent">
+        <h3 class="p-3">Modulo de Inventario</h3>
+        <p>Módulo que permite controlar y hacer seguimiento a las existencias, precios y costos de productos de la
+            empresa.
+            <br>
+            <br>
+            Una de la opciones más importantes que tiene este módulo es la del Registro de Productos,
+            donde definimos las características y propiedades de cada item, es decir Código, Descripción,
+            Tipo de Producto, Línea de Producto, SubLínea de Producto, Marca, Presentación, etc.
+            <br>
+            Los movimientos del Almacén se controlan a través de documentos como: Ingresos o Egresos por Ajustes, etc.
+            Se pueden realizar transferencias entre almacenes generando automáticamente la Nota de Ingreso y Nota de
+            Salida correspondientes.
+            <br>
+            Este módulo se encuentra integrado con el módulo de Compras, para ello permite generar una Nota de Ingreso
+            en base a las Ordenes de Compra registradas, con lo cual obtenemos un control sobre lo que se pide y lo que
+            se recibe.
+            También nos permite valorizar el almacén automáticamente. Generando un Informe de Listado de Existencias por
+            Costos.
+            <br>
+            <br>
+            Este módulo nos proporciona informes tales como: Existencia Actual, Kardex por Rango de Fecha,
+            Kardex Valorizado, etc. Estos informes los podemos obtener en línea y en cualquier
+            momento que la Gerencia lo requiera.</p>
+
+        <h4 class="text-center p-3">¡Mira la galeria!</h4>
+
+            <!--IMAGENES LIGHTBOX-->
+            <div class="gallery-container">
+                <div class="gallery-card">
+                    <a href="images/PRINCIPAL.png" data-lightbox="roadtrip"><img src="images/PRINCIPAL.png" alt="Imagen"></a>
+                </div>
+
+                <div class="gallery-card">
+                    <a href="images/MODULO DE INVENTARIO CLASIFICACION DE PRODUCTOS.png" data-lightbox="roadtrip"><img src="images/MODULO DE INVENTARIO CLASIFICACION DE PRODUCTOS.png" alt="Imagen"></a>
+                </div>
+        
+                <div class="gallery-card">
+                    <a href="images/MODULO DE INVENTARIO CONSULTA DE PRECIOS Y EXISTENCIAS.png" data-lightbox="roadtrip"><img src="images/MODULO DE INVENTARIO CONSULTA DE PRECIOS Y EXISTENCIAS.png" alt="Imagen"></a>
+                </div>
+        
+                <div class="gallery-card">
+                    <a href="images/MODULO DE INVENTARIO MAESTRO DE PRODUCTOS.png" data-lightbox="roadtrip"><img src="images/MODULO DE INVENTARIO MAESTRO DE PRODUCTOS.png" alt="Imagen"></a>
+                </div>
+        
+                <div class="gallery-card">
+                    <a href="images/MODULO DE INVENTARIO REPORTE DE KARDEX.png" data-lightbox="roadtrip"><img src="images/MODULO DE INVENTARIO REPORTE DE KARDEX.png" alt="Imagen"></a>
+                </div>
+        
+                <div class="gallery-card">
+                    <a href="images/MODULO DE INVENTARIO TRANSFERENCIA ENTRE ALMACENES.png" data-lightbox="roadtrip"><img src="images/MODULO DE INVENTARIO TRANSFERENCIA ENTRE ALMACENES.png" alt="Imagen"></a>
+                </div>
+            </div>  
+            <!--END IMGS-->
+
+    </div>
+
+    <div id="Paris" class="tabcontent">
+        <h3 class="p-3">Modulo de Compras</h3>
+        <p>Este módulo le permite obtener el control de la parte operativa referente a la compras ó gastos de su
+            Empresa.
+            <br>
+            Con la finalidad de proporcionar información oportuna a la Gerencia. Informes de Compras y Gastos.
+            <br>
+            <br>
+            Toda operación de compra se inicia con una Orden de Compra, donde especificamos las
+            Condiciones de pago, Productos a Comprar, Fecha y Lugar de Entrega, etc. que es remitida al
+            Proveedor. El Proveedor envía los productos y quien lo recepciona es área de Almacén donde
+            registra la Nota de Ingreso Por Compra.
+            <br>
+            Registrado el Documento se genera automáticamente la Cuenta por Pagar del Proveedor, es
+            decir, que la Gerencia puede visualizar la Deuda por Pagar en línea. También podemos
+            visualizar el Registro de Compras, así como las Estadísticas de Compras inmediatamente.</p>
+
+            <h4 class="text-center p-3">¡Mira la galeria!</h4>
+
+             <!--IMAGENES LIGHTBOX-->
+             <div class="gallery-container">
+                <div class="gallery-card">
+                    <a href="images/MODULO DE COMPRAS - COMPRAS.png" data-lightbox="roadtrip"><img src="images/MODULO DE COMPRAS - COMPRAS.png" alt="Imagen"></a>
+                </div>
+        
+                <div class="gallery-card">
+                    <a href="images/MODULO DE COMPRAS CUENTAS POR COBRAR.png" data-lightbox="roadtrip"><img src="images/MODULO DE COMPRAS CUENTAS POR COBRAR.png" alt="Imagen"></a>
+                </div>
+        
+                <div class="gallery-card">
+                    <a href="images/MODULO DE COMPRAS MAESTRO DE PROVEEDORES.png" data-lightbox="roadtrip"><img src="images/MODULO DE COMPRAS MAESTRO DE PROVEEDORES.png" alt="Imagen"></a>
+                </div>
+        
+                <div class="gallery-card">
+                    <a href="images/MODULO DE COMPRAS ORDENES DE COMPRAS.png" data-lightbox="roadtrip"><img src="images/MODULO DE COMPRAS ORDENES DE COMPRAS.png" alt="Imagen"></a>
+                </div>
+            <!--END IMGS-->
+            </div>
+    </div>
+
+    <div id="Tokyo" class="tabcontent">
+        <h3 class="p-3">Modulo de Ventas</h3>
+        <p>El módulo de Ventas utiliza dos esquemas de venta: uno es el de Venta con Despacho,
+            orientada a empresas cuyas operaciones se realizan a través de despachos totales o parciales en base a
+            una orden de pedido. El otro esquema es el de Venta Mostrador, orientado a empresas con
+            operaciones donde el despacho al cliente es inmediato.
+            <br>
+            <br>
+            Para las Ventas con Despacho el módulo permite registrar una Factura y finalmente generar generar una Guía
+            de Despacho.
+            La Factura genera automáticamente un movimiento en Almacén, afectando al Stock.
+            <br>
+            Para el caso de Venta Mostrador el sistema genera un pre-documento (Pedido) y luego el
+            Documento de Venta (Factura), internamente se genera la Nota de Salida que afecta al
+            módulo de Almacén descargando el stock. Automaticamente imprime una Comanda en Almacen
+            para la Preparación de los Productos para su respectiva entrega inmediata al cliente.
+            <br>
+            Una vez generado el Documento de Venta el módulo automáticamente afecta la Cuenta
+            por Cobrar del Cliente, de tal manera que podemos obtener su estado de cuenta en línea. Otra
+            información a obtener en línea son estadísticas, tales como: Ventas por Cliente, Ventas por
+            Vendedor, Ventas por Producto, etc. Además podemos obtener el Registro de Ventas aplicando cualquier
+            fltro: (Fechas Desde-Hasta, Vendedor, Clientes, Zona, Canal, etc).
+            <br>
+            <br>
+            Integrado para impresoras Fiscales de Venezuela.
+            <br>
+            Integrado con la Facturación Electronica Ecuador.
+        </p>
+
+        <h4 class="text-center p-3">¡Mira la galeria!</h4>
+
+    <!--IMAGENES LIGHTBOX-->
+    <div class="gallery-container">
+       <div class="gallery-card">
+           <a href="images/MODULO DE VENTAS MAESTRO DE CLIENTES.png" data-lightbox="roadtrip"><img src="images/MODULO DE VENTAS MAESTRO DE CLIENTES.png" alt="Imagen"></a>
+       </div>
+
+       <div class="gallery-card">
+           <a href="images/MODULO DE VENTAS MAESTRO DE FACTURACION.png" data-lightbox="roadtrip"><img src="images/MODULO DE VENTAS MAESTRO DE FACTURACION.png" alt="Imagen"></a>
+       </div>
+
+       <div class="gallery-card">
+           <a href="images/MODULO DE VENTAS MAESTRO DE PEDIDOS.png" data-lightbox="roadtrip"><img src="images/MODULO DE VENTAS MAESTRO DE PEDIDOS.png" alt="Imagen"></a>
+       </div>
+
+       <div class="gallery-card">
+           <a href="images/MODULO DE VENTAS MODULO DE COBRANZA.png" data-lightbox="roadtrip"><img src="images/MODULO DE VENTAS MODULO DE COBRANZA.png" alt="Imagen"></a>
+       </div>
+
+       <div class="gallery-card">
+        <a href="images/MODULO DE VENTAS MODULO DE NOTAS DE CREDITO.png" data-lightbox="roadtrip"><img src="images/MODULO DE VENTAS MODULO DE NOTAS DE CREDITO.png" alt="Imagen"></a>
+        </div>
+        
+        <div class="gallery-card">
+            <a href="images/MODULO DE VENTAS REPORTES ESPECIALES DE VENTAS.png" data-lightbox="roadtrip"><img src="images/MODULO DE VENTAS REPORTES ESPECIALES DE VENTAS.png" alt="Imagen"></a>
+        </div>
+   <!--END IMGS-->
+   </div>
+
+    </div>
+
+
+    <div id="B" class="tabcontent">
+        <h3 class="p-3">Modulo de Despacho</h3>
+        <p>Con el Módulo de Despacho podrá hacer seguimiento de la mercancía si esta fue entregada con exito o no.
+            Validar las entregas, reasignar nueva transportista para el envío en caso de no haberse entregado.
+            Y generar informes de los despachos del dia, para saber cuales fueron efectivos, cuales no se han
+            realizado, y medir la eficiencia del transportista.</p>
+
+            <h4 class="text-center p-3">¡Mira la galeria!</h4>
+
+             <!--IMAGENES LIGHTBOX-->
+    <div class="gallery-container">
+        <div class="gallery-card">
+            <a href="images/MODULO DE DESPACHO.png" data-lightbox="roadtrip"><img src="images/MODULO DE DESPACHO.png" alt="Imagen"></a>
+        </div>
+ 
+        <div class="gallery-card">
+            <a href="images/MODULO DE DESPACHO CONSULTA.png" data-lightbox="roadtrip"><img src="images/MODULO DE DESPACHO CONSULTA.png" alt="Imagen"></a>
+        </div>
+    </div>
+    <!--END IMGS-->
+    </div>
+    </div>
+
+    <div id="V" class="tabcontent">
+        <h3 class="p-3">Modulo de Banco</h3>
+        <p>Este módulo nos permite llevar un control de las operaciones financieras de la empresa, con la
+            finalidad de obtener información oportuna para la Gerencia.
+            <br>
+            <br>
+            Este módulo nos permite registrar los movimiento Bancarios, de tal manera que podamos
+            obtener inmediatamente nuestros estados de cuenta. Hay operaciones que afectan al Libro
+            Banco, tales como el Pago a Proveedores si es con cheque o transferencias.
+            <br>
+            Tambien nos permite conciliar nuestras operaciones Bancarias con el estado de Cuenta
+            del Banco.
+            <br>
+            <br>
+            Para cada movimiento Bancario, este módulo le asigna un concepto a dicho movimiento, de tal
+            manera que podamos obtener un Flujo de Caja Realizado Diario. También podemos obtener un
+            Flujo Caja Mensual Realizado, donde nos muestra el movimiento Bancarios mes a mes con sus
+            saldos respectivos.</p>
+
+            <h4 class="text-center p-3">¡Mira la galeria!</h4>
+
+            <!--IMAGENES LIGHTBOX-->
+   <div class="gallery-container">
+       <div class="gallery-card">
+           <a href="images/MODULO DE BANCO.png" data-lightbox="roadtrip"><img src="images/MODULO DE BANCO.png" alt="Imagen"></a>
+       </div>
+
+       <div class="gallery-card">
+           <a href="images/MODULO DE BANCO MODULO DE MOVIMIENTOS BANCARIOS.png" data-lightbox="roadtrip"><img src="images/MODULO DE BANCO MODULO DE MOVIMIENTOS BANCARIOS.png" alt="Imagen"></a>
+       </div>
+
+       <div class="gallery-card">
+        <a href="images/MODULO DE BANCO MAESTRO DE CUENTAS BANCARIAS.png" data-lightbox="roadtrip"><img src="images/MODULO DE BANCO MAESTRO DE CUENTAS BANCARIAS.png" alt="Imagen"></a>
+        </div>
+
+        <div class="gallery-card">
+            <a href="images/MODULO DE BANCO DISPONIBILIDAD BANCARIA.png" data-lightbox="roadtrip"><img src="images/MODULO DE BANCO DISPONIBILIDAD BANCARIA.png" alt="Imagen"></a>
+        </div>
+   </div>
+   <!--END IMGS-->
+   </div>
+
+    <div id="C" class="tabcontent">
         <h3 class="p-3">Modulo de Configuracion</h3>
-        <p>Tokyo is the capital of Japan.</p>
-      </div>
+        <p>Este módulo le permitirá configurar el tipo de impresión que tendrá, si es formato preimpreso,
+            impresora fiscal, impresora de ticket, configurar y crear condiciones en los diversos módulos
+            del sistema, generar backups de la base de datos, etc.</p>
+
+              <!--IMAGENES LIGHTBOX-->
+   <div class="gallery-container">
+    <div class="gallery-card">
+        <a href="images/MODULO DE CONFIGURACION ASIGNACION DE TASA.png" data-lightbox="roadtrip"><img src="images/MODULO DE CONFIGURACION ASIGNACION DE TASA.png" alt="Imagen"></a>
+    </div>
+
+    <div class="gallery-card">
+        <a href="images/MODULO DE CONFIGURACION CONF IMPRESORA FISCAL.png" data-lightbox="roadtrip"><img src="images/MODULO DE CONFIGURACION CONF IMPRESORA FISCAL.png" alt="Imagen"></a>
+    </div>
+
+    <div class="gallery-card">
+     <a href="images/MODULO DE CONFIGURACION CONFG CAJAS.png" data-lightbox="roadtrip"><img src="images/MODULO DE CONFIGURACION CONFG CAJAS.png" alt="Imagen"></a>
+     </div>
+
+     <div class="gallery-card">
+         <a href="images/MODULO DE CONFIGURACION CONFIG GENERAL.png" data-lightbox="roadtrip"><img src="images/MODULO DE CONFIGURACION CONFIG GENERAL.png" alt="Imagen"></a>
+     </div>
+
+     <div class="gallery-card">
+        <a href="images/MODULO DE CONFIGURACION DATA MASTER SQL.png" data-lightbox="roadtrip"><img src="images/MODULO DE CONFIGURACION DATA MASTER SQL.png" alt="Imagen"></a>
+    </div>
+</div>
+<!--END IMGS-->
+
+    </div>
     <!--END INFO SECTION-->
+    </div>
 
     <!--JAVASCRIPT DE LA TABLA-->
     <script>
         function openCity(evt, cityName) {
-          var i, tabcontent, tablinks;
-          tabcontent = document.getElementsByClassName("tabcontent");
-          for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-          }
-          tablinks = document.getElementsByClassName("tablinks");
-          for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
-          }
-          document.getElementById(cityName).style.display = "block";
-          evt.currentTarget.className += " active";
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
         }
-        
+
         // Get the element with id="defaultOpen" and click on it
         document.getElementById("defaultOpen").click();
-        </script>
-    <!--END DE LA TABLA -->    
+    </script>
+    <!--END DE LA TABLA -->
 
     <!-- Footer -->
     <svg class="ex-footer-frame" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
@@ -269,7 +500,11 @@
     <!-- end of copyright -->
 
 
-    <!-- Scripts -->
+    <!-- Scripts lightboxes--> 
+    <script src="JS-lightboxes/lightbox-plus-jquery.min.js"></script>
+    <script src="JS-lightboxes/lightbox.min.js"></script>
+    <script src="JS-lightboxes/app.js"></script>
+    <!--Scripts Prioritarios-->
     <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
     <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
     <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
@@ -278,6 +513,7 @@
     <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
     <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
     <script src="js/scripts.js"></script> <!-- Custom scripts -->
+    <!--END Scripts-->
 </body>
 
 </html>

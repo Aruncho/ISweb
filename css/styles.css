@@ -29,6 +29,7 @@ Table Of Contents:
 06. Description
 07. Features
 08. Features Lightboxes
+8.5. ¿Why IS?
 09. Details
 10. Video
 11. Pricing
@@ -1150,6 +1151,38 @@ input[type='checkbox'] {
 	height: 2.75rem;
 	color: #707984;
 }
+
+/***********************/
+/*     8.5. ¿Why IS?     */
+/***********************/
+
+	.why {
+		background: #5f4dee;
+		padding-top: 150px;
+		padding-bottom: 150px;
+	}
+
+	.why h1 {
+		color: whitesmoke;
+	}
+
+	.why h4 {
+		color: rgba(0, 0, 0, 0.514);
+		padding-bottom: 150px;
+	}
+
+	.why h3 {
+		color: rgba(255, 255, 255, 0.904);
+	}
+
+	.why h5 {
+		color: rgba(0, 0, 0, 0.541);
+	}
+
+	.why i {
+		padding-left: 50%;
+		color: #c4d8dc;
+	}
 
 
 /***********************/

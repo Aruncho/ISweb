@@ -1,0 +1,11 @@
+
+
+header h4 {
+    color: rgba(0, 0, 0, 0.74);
+}
+
+@media screen and (max-width: 768px) {
+    .tabcontent {
+        padding-top: 100px;
+    }
+}

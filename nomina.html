@@ -31,6 +31,7 @@
     <link href="css/magnific-popup.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
     <link href="css/tab-admin.css" rel="stylesheet">
+    <link href="css/tab-nomina.css" rel="stylesheet">
 
     <!-- Favicon  -->
     <link rel="icon" href="images/favicon.png">
@@ -89,9 +90,12 @@
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="admin.html"><span class="item-text">IS
                                     ADMINISTRATIVO</span></a>
-                            <div class="dropdown-items-divide-hr"></div>
+                        <div class="dropdown-items-divide-hr"></div>
                             <a class="dropdown-item" href="nomina.html"><span class="item-text">IS
                                     NOMINA</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                            <a class="dropdown-item" href="web-gerencial.html"><span class="item-text">IS
+                                        WEB GERENCIAL</span></a>  
                     </li>
 
                     <li class="nav-item">
@@ -116,7 +120,16 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>¿Que es InvenSoftware Nomina?</h1>
+                    <h1 class="pb-4">¿Que es InvenSoftware Nomina?</h1>
+                    <h4 class="text-center">Es un sistema de control de personal, donde se calculan las nóminas,
+                        vacaciones y utilidades.
+                        Permite la impresión de carnets de identificación del personal, lleva la historia de cada
+                        concepto, de cada empleado
+                        por cada una de las nóminas que se efectúan, imprime recibos, cheques, y una variedad de
+                        reportes necesarios
+                        para que el administrador del sistema pueda controlar y supervisar el recurso humano de sus
+                        empresas.
+                    </h4>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -131,77 +144,167 @@
 
     <!--TAB SECTION-->
     <div class="tab">
-        <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">EMPRESAS</button>
-        <button class="tablinks" onclick="openCity(event, 'Paris')">EMPRESAS</button>
-        <button class="tablinks" onclick="openCity(event, 'Tokyo')">CONCEPTOS</button>
-        <button class="tablinks" onclick="openCity(event, 'B')">PRENOMINA</button>
-        <button class="tablinks" onclick="openCity(event, 'V')">HISTORICOS</button>
-        <button class="tablinks" onclick="openCity(event, 'C')">RECIBOS</button>
-      </div>
-      
-      <!--CONTENIDO-->
-      <div id="London" class="tabcontent">
-        <h3 class="p-3">Modulo de Inventario</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi enim cupiditate rem placeat nihil aliquam facere maxime odio laboriosam sed porro earum cum nisi natus tempore illum eum harum, eos sit aperiam, fugit adipisci! Inventore dolore, dolorum, blanditiis perspiciatis porro tempora aliquid quaerat, unde quisquam dolorem similique at iste recusandae temporibus! Fuga cumque obcaecati quo, dolorem cum, esse enim similique numquam ullam consectetur asperiores accusamus tempora illo blanditiis. Impedit beatae quos sed animi minus, maxime fuga consequatur totam expedita. Laudantium rerum illum quam fugit veritatis quasi officia, facere consequuntur sint aperiam error! Odio fugiat aspernatur vero nostrum, asperiores modi nobis!</p>
-      </div>
-      
-      <div id="Paris" class="tabcontent">
-        <h3 class="p-3">Modulo de Compras</h3>
-        <p>Paris is the capital of France.</p> 
-      </div>
-      
-      <div id="Tokyo" class="tabcontent">
-        <h3 class="p-3">Modulo de Ventas</h3>
-        <p>Tokyo is the capital of Japan.</p>
-      </div>
-  
-      <div id="B" class="tabcontent">
-        <h3 class="p-3">Modulo de Despacho</h3>
-        <p>Paris is the capital of France.</p> 
-      </div>
-      
-      <div id="V" class="tabcontent">
-        <h3 class="p-3">Modulo de Banco</h3>
-        <p>Tokyo is the capital of Japan.</p>
-      </div>
+        <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen"><i class="fas fa-building pr-1"></i>MULTIEMPRESA</button>
+        <button class="tablinks" onclick="openCity(event, 'Paris')"><i class="fas fa-wrench pr-1"></i>CONFIGURABLE</button>
+        <button class="tablinks" onclick="openCity(event, 'Tokyo')"><i class="fas fa-chalkboard-teacher pr-1"></i>MAESTROS</button>
+        <button class="tablinks" onclick="openCity(event, 'B')"><i class="fas fa-calculator pr-1"></i>OPERACIONES</button>
+        <button class="tablinks" onclick="openCity(event, 'V')"><i class="fas fa-address-book pr-1"></i>NOMINAS</button>
+        <button class="tablinks" onclick="openCity(event, 'C')"><i class="fas fa-envelope-open-text pr-1"></i>RECIBOS DE NOMINAS</button>
+        <button class="tablinks" onclick="openCity(event, 'P')"><i class="fas fa-coins pr-1"></i>PRESTAMOS</button>
+    </div>
 
-      <div id="C" class="tabcontent">
-        <h3 class="p-3">Modulo de Configuracion</h3>
-        <p>Tokyo is the capital of Japan.</p>
-      </div>
+    <!--CONTENIDO-->
+    <div id="London" class="tabcontent">
+        <h3 class="p-3">Multiempresa</h3>
+        <p>Permite controlar varias sucursales de la empresa. Al mismo tiempo, cada sucursal permite
+            que le sean establecidos sus parámetros de configuración particulares. Es decir,
+            cada una puede tener una nómina diferente. (Diaria, Semanal, Quincenal, Mensual)</p>
+    </div>
+
+    <div id="Paris" class="tabcontent">
+        <h3 class="p-3">Configurable</h3>
+        <p>Permite ajustar las asignaciones y deducciones de los empleados de acuerdo con lo establecido en las leyes
+            correspondientes y las políticas internas de la empresa, ya que es totalmente configurable por el usuario.
+        </p>
+    </div>
+
+    <div id="Tokyo" class="tabcontent">
+        <h3 class="p-3">Maestros</h3>
+        <p>Los maestros de cada módulo se deben alimentar de forma periódica y
+            sobre todo cuando se implanta la solución, estos formularios están relacionados a cada módulo.
+            Dentro de las opciones tenemos:
+            <ul>
+                <li>Trabajadores</li>
+                <li>Tipos de Nómina</li>
+                <li>Grupos de conceptos</li>
+                <li>Conceptos</li>
+                <li>Bancos</li>
+                <li>Monedas</li>
+                <li>Prestamos</li>
+                <li>Tipos de préstamos</li>
+                <li>Etc.</li>
+            </ul>
+        </p>
+    </div>
+
+    <div id="B" class="tabcontent">
+        <h3 class="p-3">Operaciones</h3>
+        <p>Agrupa todas las opciones relacionadas con la creación y gestión de nómina,
+            son las opciones frecuentes que usan los usuarios en el control de las operaciones de la empresa.
+            Dentro de las operaciones que de pueden realizar en el módulo de nómina tenemos:
+            <ul>
+                <li>Variaciones</li>
+                <li>Nominas</li>
+                <li>Recibo de Nóminas</li>
+                <li>Vacaciones</li>
+                <li>Préstamos</li>
+                <li>Reposos</li>
+                <li>Permisos</li>
+                <li>Variaciones del trabajador</li>
+            </ul>
+        </p>
+    </div>
+
+    <div id="V" class="tabcontent">
+        <h3 class="p-3">Nóminas</h3>
+        <p>Esta opción permite la generación de la nómina parametrizada previamente.
+            Los tipos de nómina que puede generar por esta opción son:
+            <ul>
+                <li>Nómina Quincenal o de Empleados</li>
+                <li>Nomina Semanal o de Obreros</li>
+                <li>Nómina Mensual o Directivos</li>
+                <li>Nómina de contratados</li>
+                <li>Nómina de Adelanto de Sueldos</li>
+                <li>Nómina de Pasantes</li>
+                <li>Nómina de Utilidades</li>
+                <li>Nómina de Vacaciones</li>
+                <li>Nómina de Liquidaciones de Trabajadores</li>
+                <br>
+            </ul>
+
+            Para que un trabajador pueda ser generado en una nómina se verifican las siguientes condiciones:
+            <ul>
+                <br>
+                <li>Que el trabajador este activo.</li>
+                <li>Que tenga sueldo mensual en el campo de nómina mayor a cero.</li>
+                <li>Que la fecha de ingreso sea inferior a la fecha de generación del respectivo contrato.</li>
+                <li>Que no este creado en la opción de liquidaciones, es decir que este por liquidar.
+
+                </li>
+            </ul>
+        </p>
+    </div>
+
+    <div id="C" class="tabcontent">
+        <h3 class="p-3">Recibos de Nóminas</h3>
+        <p>En esta opción es posible imprimir y verificar los recibos que fueron creados por medio de la generación de la nómina. Debes tener en cuenta lo siguiente:
+        <ul>
+            <li>Los recibos de pago generados por cualquier nómina pueden ser modificados mientras la prenómina no se haya actualizado.</li>
+            <li>Si eliminas la nómina que generó el recibo de pago también se eliminará el recibo.</li>
+            <li>Si modificas un recibo de pago manualmente y vuelves a generar la nómina de este recibo los cambios se perderán ya que el sistema sobre escribirá la información.</li>
+        </ul>    
+        </p>
+    </div>
+
+    <div id="P" class="tabcontent">
+        <h3 class="p-3">Prestamos</h3>
+        <p>Como su nombre lo indica, representan un préstamo realizado al trabajador, 
+            el cuál será pagado por el mismo mediante dos o más cuotas. 
+            En este documento se indica la fecha en que se asignará el monto del préstamo al trabajador, 
+            y las fechas y montos de las cuotas. Los contratos de sueldos y salarios harán 
+            la asignación del monto del préstamo al generar la nómina de la fecha indicada, 
+            y harán las deducciones de las cuotas en las nóminas siguientes cuando coincidan 
+            con las fechas de las mismas; cuando cada cuota sea deducida en el contrato 
+            correspondiente se marcará la misma como pagada, reduciendo el saldo pendiente por pagar.
+            </p>
+    </div>
     <!--END INFO SECTION-->
 
     <!--JAVASCRIPT DE LA TABLA-->
     <script>
         function openCity(evt, cityName) {
-          var i, tabcontent, tablinks;
-          tabcontent = document.getElementsByClassName("tabcontent");
-          for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-          }
-          tablinks = document.getElementsByClassName("tablinks");
-          for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
-          }
-          document.getElementById(cityName).style.display = "block";
-          evt.currentTarget.className += " active";
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
         }
-        
+
         // Get the element with id="defaultOpen" and click on it
         document.getElementById("defaultOpen").click();
-        </script>
-    <!--END DE LA TABLA -->    
+    </script>
+    <!--END DE LA TABLA -->
 
 
     <!-- Footer -->
-    <svg class="ex-footer-frame" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1920 79"><defs><style>.cls-2{fill:#5f4def;}</style></defs><title>footer-frame</title><path class="cls-2" d="M0,72.427C143,12.138,255.5,4.577,328.644,7.943c147.721,6.8,183.881,60.242,320.83,53.737,143-6.793,167.826-68.128,293-60.9,109.095,6.3,115.68,54.364,225.251,57.319,113.58,3.064,138.8-47.711,251.189-41.8,104.012,5.474,109.713,50.4,197.369,46.572,89.549-3.91,124.375-52.563,227.622-50.155A338.646,338.646,0,0,1,1920,23.467V79.75H0V72.427Z" transform="translate(0 -0.188)"/></svg>
+    <svg class="ex-footer-frame" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+        viewBox="0 0 1920 79">
+        <defs>
+            <style>
+                .cls-2 {
+                    fill: #5f4def;
+                }
+            </style>
+        </defs>
+        <title>footer-frame</title>
+        <path class="cls-2"
+            d="M0,72.427C143,12.138,255.5,4.577,328.644,7.943c147.721,6.8,183.881,60.242,320.83,53.737,143-6.793,167.826-68.128,293-60.9,109.095,6.3,115.68,54.364,225.251,57.319,113.58,3.064,138.8-47.711,251.189-41.8,104.012,5.474,109.713,50.4,197.369,46.572,89.549-3.91,124.375-52.563,227.622-50.155A338.646,338.646,0,0,1,1920,23.467V79.75H0V72.427Z"
+            transform="translate(0 -0.188)" />
+    </svg>
     <div class="footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
                     <div class="footer-col first">
                         <h4>About Tivo</h4>
-                        <p class="p-small">We're passionate about offering some of the best business growth services for start more words</p>
+                        <p class="p-small">We're passionate about offering some of the best business growth services for
+                            start more words</p>
                     </div>
                 </div> <!-- end of col -->
                 <div class="col-md-4">
@@ -210,11 +313,14 @@
                         <ul class="list-unstyled li-space-lg p-small">
                             <li class="media">
                                 <i class="fas fa-square"></i>
-                                <div class="media-body">Our business partners <a class="white" href="#your-link">startupguide.com</a></div>
+                                <div class="media-body">Our business partners <a class="white"
+                                        href="#your-link">startupguide.com</a></div>
                             </li>
                             <li class="media">
                                 <i class="fas fa-square"></i>
-                                <div class="media-body">Read our <a class="white" href="terms-conditions.html">Terms & Conditions</a>, <a class="white" href="privacy-policy.html">Privacy Policy</a></div>
+                                <div class="media-body">Read our <a class="white" href="terms-conditions.html">Terms &
+                                        Conditions</a>, <a class="white" href="privacy-policy.html">Privacy Policy</a>
+                                </div>
                             </li>
                         </ul>
                     </div>
@@ -229,14 +335,17 @@
                             </li>
                             <li class="media">
                                 <i class="fas fa-envelope"></i>
-                                <div class="media-body"><a class="white" href="mailto:contact@Tivo.com">contact@Tivo.com</a> <i class="fas fa-globe"></i><a class="white" href="#your-link">www.Tivo.com</a></div>
+                                <div class="media-body"><a class="white"
+                                        href="mailto:contact@Tivo.com">contact@Tivo.com</a> <i
+                                        class="fas fa-globe"></i><a class="white" href="#your-link">www.Tivo.com</a>
+                                </div>
                             </li>
                         </ul>
-                    </div> 
+                    </div>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
-    </div> <!-- end of footer -->  
+    </div> <!-- end of footer -->
     <!-- end of footer -->
 
 
@@ -249,10 +358,10 @@
                 </div> <!-- end of col -->
             </div> <!-- enf of row -->
         </div> <!-- end of container -->
-    </div> <!-- end of copyright --> 
+    </div> <!-- end of copyright -->
     <!-- end of copyright -->
-    
-    	
+
+
     <!-- Scripts -->
     <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
     <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
@@ -263,4 +372,5 @@
     <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
     <script src="js/scripts.js"></script> <!-- Custom scripts -->
 </body>
+
 </html>

@@ -20,7 +20,7 @@
     <meta property="og:type" content="article" />
 
     <!-- Website Title -->
-    <title>InvenSoftware Administrativo</title>
+    <title>InvenSoftware Pedidos</title>
 
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap&subset=latin-ext"
@@ -32,6 +32,7 @@
     <link href="css/styles.css" rel="stylesheet">
     <link href="css/tab-admin.css" rel="stylesheet">
     <link href="css/tab-nomina.css" rel="stylesheet">
+    <link href="css/pedidos.css" rel="stylesheet">
 
     <!-- Favicon  -->
     <link rel="icon" href="images/favicon.png">
@@ -89,16 +90,16 @@
                             role="button" aria-haspopup="true" aria-expanded="false">PRODUCTOS</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="admin.html"><span class="item-text">IS
-                                    ADMINISTRATIVO</span></a>
+                                ADMINISTRATIVO</span></a>
                         <div class="dropdown-items-divide-hr"></div>
                             <a class="dropdown-item" href="nomina.html"><span class="item-text">IS
-                                    NOMINA</span></a>
+                                NOMINA</span></a>
                         <div class="dropdown-items-divide-hr"></div>
                             <a class="dropdown-item" href="web-gerencial.html"><span class="item-text">IS
-                                    WEB GERENCIAL</span></a>  
+                                WEB GERENCIAL</span></a>  
                         <div class="dropdown-items-divide-hr"></div>
                             <a class="dropdown-item" href="pedidos.html"><span class="item-text">IS
-                                    PEDIDOS</span></a>
+                                PEDIDOS</span></a>   
                     </li>
 
                     <li class="nav-item">
@@ -123,15 +124,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="pb-4">¿Que es InvenSoftware Nomina?</h1>
-                    <h4 class="text-center">Es un sistema de control de personal, donde se calculan las nóminas,
-                        vacaciones y utilidades.
-                        Permite la impresión de carnets de identificación del personal, lleva la historia de cada
-                        concepto, de cada empleado
-                        por cada una de las nóminas que se efectúan, imprime recibos, cheques, y una variedad de
-                        reportes necesarios
-                        para que el administrador del sistema pueda controlar y supervisar el recurso humano de sus
-                        empresas.
+                    <h1 class="pb-4">¿Que es InvenSoftware Pedidos?</h1>
+                    <h4 class="text-center">Es una app que permite que tus Vendedores puedan realizar tareas de preventa desde sus dispositivos móviles, sincronizando con InvenSoftware Administrativo Plus.
+                    Cada Vendedor dispone del catálogo de artículos y los clientes asignados a su zona. Mejora tu equipo de ventas con una herramienta fácil y efectiva.
                     </h4>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -144,61 +139,124 @@
         <h3 class="text-center">¡Lea para mas información!</h3>
     </div>
 
+    <!--ICONOS SECTION-->
+        <div class="iconos">
+            <div class="container">
+                <div class="card-deck text-center">
+                    <div class="card">
+                        <i class="fas fa-users fa-3x"></i>
+                      <div class="card-body">
+                        <h5 class="card-title">Artículos</h5>
+                        <p class="card-text">Tus Vendedores necesitan esta herramienta para trabajar más cómodos.</p>
+                      </div>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-toggle-on fa-3x"></i>
+                      <div class="card-body">
+                        <h5 class="card-title">Sincronización Online y Offline</h5>
+                        <p class="card-text">No hay problema si no dispones de conexión a internet. Puedes registrar la operación y luego sincronizarte para actualizar.</p>
+                      </div>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-spinner fa-3x"></i>
+                      <div class="card-body">
+                        <h5 class="card-title">Conectado a InvenSoftware</h5>
+                        <p class="card-text">Desde cualquier parte del mundo se sincroniza la subida al servidor y actualizas la información local en el movil. Actualizas facilmente la información de clientes y productos.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card-deck text-center pt-5">
+                    <div class="card">
+                        <i class="fas fa-check-circle fa-3x"></i>
+                      <div class="card-body">
+                        <h5 class="card-title">Sistema fácil de usar e instalar</h5>
+                        <p class="card-text">La instalación y configuración es sumamente sencilla, se desarrollo  de manera intuitiva para que su manejo sea lógico y sencillo.</p>
+                      </div>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-hand-peace fa-3x"></i>
+                      <div class="card-body">
+                        <h5 class="card-title">Cierra la venta facilmente</h5>
+                        <p class="card-text">Los clientes se sienten confiados al concretar y cerrar una venta fisica.</p>
+                      </div>
+                    </div>
+                    <div class="card">
+                        <i class="fab fa-android fa-3x"></i>
+                      <div class="card-body">
+                        <h5 class="card-title">Compatible Android</h5>
+                        <p class="card-text">El APP es compatible con Smartphone y tablet con Android.</p>
+                      </div>
+                    </div>
+                  </div>
+
+            </div>
+        </div>
+    <!--EN ICONOS SECTION-->
+
+
+
 
     <!--TAB SECTION-->
     <div class="tab">
-        <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen"><i class="fas fa-building pr-1"></i>MULTIEMPRESA</button>
-        <button class="tablinks" onclick="openCity(event, 'Paris')"><i class="fas fa-wrench pr-1"></i>CONFIGURABLE</button>
-        <button class="tablinks" onclick="openCity(event, 'Tokyo')"><i class="fas fa-chalkboard-teacher pr-1"></i>MAESTROS</button>
-        <button class="tablinks" onclick="openCity(event, 'B')"><i class="fas fa-calculator pr-1"></i>OPERACIONES</button>
-        <button class="tablinks" onclick="openCity(event, 'V')"><i class="fas fa-address-book pr-1"></i>NOMINAS</button>
-        <button class="tablinks" onclick="openCity(event, 'C')"><i class="fas fa-envelope-open-text pr-1"></i>RECIBOS DE NOMINAS</button>
-        <button class="tablinks" onclick="openCity(event, 'P')"><i class="fas fa-coins pr-1"></i>PRESTAMOS</button>
+        <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen"><i class="fas fa-boxes pr-1"></i>ARTICULOS</button>
+        <button class="tablinks" onclick="openCity(event, 'Paris')"><i class="fas fa-user pr-1"></i>CLIENTES</button>
+        <button class="tablinks" onclick="openCity(event, 'Tokyo')"><i class="fas fa-box pr-1"></i>PEDIDOS</button>
+        <button class="tablinks" onclick="openCity(event, 'B')"><i class="fas fa-folder-open pr-1"></i>DOCUMENTOS</button>
+        <button class="tablinks" onclick="openCity(event, 'V')"><i class="fas fa-question pr-1"></i>CXC</button>
+        <button class="tablinks" onclick="openCity(event, 'C')"><i class="fas fa-truck-loading pr-1"></i>DESPACHO</button>
+        <button class="tablinks" onclick="openCity(event, 'P')"><i class="fas fa-bell pr-1"></i>NOTIFICACIONES</button>
     </div>
 
     <!--CONTENIDO-->
     <div id="London" class="tabcontent">
-        <h3 class="p-3">Multiempresa</h3>
-        <p>Permite controlar varias sucursales de la empresa. Al mismo tiempo, cada sucursal permite
-            que le sean establecidos sus parámetros de configuración particulares. Es decir,
-            cada una puede tener una nómina diferente. (Diaria, Semanal, Quincenal, Mensual)</p>
+        <h3 class="p-3">ARTICULOS</h3>
+        <p>
+            <ul>
+                <li>Catálogo de productos agrupados por Tipo, Linea y SubLinea.</li>
+                <li>Consulta la disponibilidad de stock en el almacen.</li>
+                <li>Dispone de 4 Listas de Precios.</li>
+                <li>Búsqueda rápida de un producto.</li>
+                <li>Consulta Histórico de Ventas.</li>
+            </ul>
+        </p>
     </div>
 
     <div id="Paris" class="tabcontent">
-        <h3 class="p-3">Configurable</h3>
-        <p>Permite ajustar las asignaciones y deducciones de los empleados de acuerdo con lo establecido en las leyes
-            correspondientes y las políticas internas de la empresa, ya que es totalmente configurable por el usuario.
+        <h3 class="p-3">Clientes</h3>
+        <p>
+            Información completa del cliente:
+            <ul>
+                <li>Datos fiscales.</li>
+                <li>Contacto.</li>
+                <li>Cada Vendedor visualiza los Clientes asociados a su Zona.</li>
+                <li>Búsquedas rápidas por distintos conceptos.</li>
+                <li>Creación de nuevos clientes que el comercial visita.</li>
+                <li>Consulta Histórico de Ventas.</li>
+            </ul>
         </p>
     </div>
 
     <div id="Tokyo" class="tabcontent">
-        <h3 class="p-3">Maestros</h3>
-        <p>Los maestros de cada módulo se deben alimentar de forma periódica y
-            sobre todo cuando se implanta la solución, estos formularios están relacionados a cada módulo.
-            Dentro de las opciones tenemos:
+        <h3 class="p-3">PEDIDOS</h3>
+        <p>
             <ul>
-                <li>Trabajadores</li>
-                <li>Tipos de Nómina</li>
-                <li>Grupos de conceptos</li>
-                <li>Conceptos</li>
-                <li>Bancos</li>
-                <li>Monedas</li>
-                <li>Prestamos</li>
-                <li>Tipos de préstamos</li>
-                <li>Etc.</li>
+                <li>Entrada de datos rápida y efectiva.</li>
+                <li>Búsqueda potente de clientes y productos.</li>
+                <li>Identificación de la situación del pedido: sincronizado o pendiente..</li>
+                <li>Notifica el stock disponible de cada producto.</li>
+                <li>Te permite ir incluyendo artículos hasta finalizar la venta.</li>
             </ul>
         </p>
     </div>
 
     <div id="B" class="tabcontent">
-        <h3 class="p-3">Operaciones</h3>
-        <p>Agrupa todas las opciones relacionadas con la creación y gestión de nómina,
-            son las opciones frecuentes que usan los usuarios en el control de las operaciones de la empresa.
-            Dentro de las operaciones que de pueden realizar en el módulo de nómina tenemos:
+        <h3 class="p-3">DOCUMENTOS</h3>
+        <p>
             <ul>
-                <li>Variaciones</li>
-                <li>Nominas</li>
-                <li>Recibo de Nóminas</li>
+                <li>Consulta de los Documentos.</li>
+                <li>Facturas.</li>
+                <li>Notas de Entrega.</li>
                 <li>Vacaciones</li>
                 <li>Préstamos</li>
                 <li>Reposos</li>
@@ -209,57 +267,37 @@
     </div>
 
     <div id="V" class="tabcontent">
-        <h3 class="p-3">Nóminas</h3>
-        <p>Esta opción permite la generación de la nómina parametrizada previamente.
-            Los tipos de nómina que puede generar por esta opción son:
+        <h3 class="p-3">CxC</h3>
+        <p>
             <ul>
-                <li>Nómina Quincenal o de Empleados</li>
-                <li>Nomina Semanal o de Obreros</li>
-                <li>Nómina Mensual o Directivos</li>
-                <li>Nómina de contratados</li>
-                <li>Nómina de Adelanto de Sueldos</li>
-                <li>Nómina de Pasantes</li>
-                <li>Nómina de Utilidades</li>
-                <li>Nómina de Vacaciones</li>
-                <li>Nómina de Liquidaciones de Trabajadores</li>
-                <br>
-            </ul>
-
-            Para que un trabajador pueda ser generado en una nómina se verifican las siguientes condiciones:
-            <ul>
-                <br>
-                <li>Que el trabajador este activo.</li>
-                <li>Que tenga sueldo mensual en el campo de nómina mayor a cero.</li>
-                <li>Que la fecha de ingreso sea inferior a la fecha de generación del respectivo contrato.</li>
-                <li>Que no este creado en la opción de liquidaciones, es decir que este por liquidar.
-
-                </li>
+                <li>Consulta de CXC.</li>
+                <li>Facil acceso a los documentos pendientes por clientes</li>
             </ul>
         </p>
     </div>
 
     <div id="C" class="tabcontent">
-        <h3 class="p-3">Recibos de Nóminas</h3>
-        <p>En esta opción es posible imprimir y verificar los recibos que fueron creados por medio de la generación de la nómina. Debes tener en cuenta lo siguiente:
+        <h3 class="p-3">Despacho</h3>
+        <p>
         <ul>
-            <li>Los recibos de pago generados por cualquier nómina pueden ser modificados mientras la prenómina no se haya actualizado.</li>
-            <li>Si eliminas la nómina que generó el recibo de pago también se eliminará el recibo.</li>
-            <li>Si modificas un recibo de pago manualmente y vuelves a generar la nómina de este recibo los cambios se perderán ya que el sistema sobre escribirá la información.</li>
+            <li>Validación del estatus de los Documentos.</li>
+            <li>Por Asignar.</li>
+            <li>Por Despachar.</li>
+            <li>Despachados.</li>
         </ul>    
         </p>
     </div>
 
     <div id="P" class="tabcontent">
-        <h3 class="p-3">Prestamos</h3>
-        <p>Como su nombre lo indica, representan un préstamo realizado al trabajador, 
-            el cuál será pagado por el mismo mediante dos o más cuotas. 
-            En este documento se indica la fecha en que se asignará el monto del préstamo al trabajador, 
-            y las fechas y montos de las cuotas. Los contratos de sueldos y salarios harán 
-            la asignación del monto del préstamo al generar la nómina de la fecha indicada, 
-            y harán las deducciones de las cuotas en las nóminas siguientes cuando coincidan 
-            con las fechas de las mismas; cuando cada cuota sea deducida en el contrato 
-            correspondiente se marcará la misma como pagada, reduciendo el saldo pendiente por pagar.
-            </p>
+        <h3 class="p-3">Notificaciones</h3>
+        <p>
+            <ul>
+                <li>Listado de Alertas al Vendedor.</li>
+                <li>Pedidos Facturados o Rechazados.</li>
+                <li>Documentos Despachados.</li>
+                <li>Etc...</li>
+            </ul>
+        </p>
     </div>
     <!--END INFO SECTION-->
 
